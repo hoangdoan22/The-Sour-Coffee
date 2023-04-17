@@ -151,12 +151,12 @@ public class MainOOPday3_1 {
 		orderDungCFWhile.quantity = 5;
 		orderDungCFWhile.subtotal = orderDungCFWhile.order.productPrice * orderDungCFWhile.quantity;
 
-		OrderDetail orderDJaydenCFBrown = new OrderDetail();
-		orderDJaydenCFBrown.order = orderJayden;
-		orderDJaydenCFBrown.product = productCFBrown;
-		orderDJaydenCFBrown.order.productPrice = productCFBrown.price;
-		orderDJaydenCFBrown.quantity = 1;
-		orderDJaydenCFBrown.subtotal = orderDJaydenCFBrown.order.productPrice * orderDJaydenCFBrown.quantity;
+		OrderDetail orderJaydenCFBrown = new OrderDetail();
+		orderJaydenCFBrown.order = orderJayden;
+		orderJaydenCFBrown.product = productCFBrown;
+		orderJaydenCFBrown.order.productPrice = productCFBrown.price;
+		orderJaydenCFBrown.quantity = 1;
+		orderJaydenCFBrown.subtotal = orderJaydenCFBrown.order.productPrice * orderJaydenCFBrown.quantity;
 
 		OrderDetail orderJaydenCFWhile = new OrderDetail();
 		orderJaydenCFWhile.order = orderJayden;
@@ -165,7 +165,7 @@ public class MainOOPday3_1 {
 		orderJaydenCFWhile.quantity = 2;
 		orderJaydenCFWhile.subtotal = orderJaydenCFWhile.order.productPrice * orderJaydenCFWhile.quantity;
 
-		OrderDetail[] orderDetails = { orderDungCFBlack, orderDungCFWhile, orderDJaydenCFBrown, orderJaydenCFWhile };
+		OrderDetail[] orderDetails = { orderDungCFBlack, orderDungCFWhile, orderJaydenCFBrown, orderJaydenCFWhile };
 
 		showAllOrders(orders, orderDetails);
 
