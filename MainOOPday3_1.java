@@ -1,7 +1,5 @@
 package homeworkOOPday3_1;
 
-import java.util.Scanner;
-
 public class MainOOPday3_1 {
 	public static void main(String[] args) {
 
