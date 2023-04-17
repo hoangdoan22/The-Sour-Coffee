@@ -21,7 +21,7 @@ public class MainOOPday3_1 {
 		accountJayden.id = 0002;
 		accountJayden.loginID = "jayden123";
 		accountJayden.password = "jayden@123";
-		accountJayden.customer = customerDung;
+		accountJayden.customer = customerJayden;
 
 		Customer[] customers = { customerDung, customerJayden };
 
