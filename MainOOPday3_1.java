@@ -140,30 +140,30 @@ public class MainOOPday3_1 {
 		OrderDetail orderDungCFBlack = new OrderDetail();
 		orderDungCFBlack.order = orderDung;
 		orderDungCFBlack.product = productCFBlack;
-		orderDungCFBlack.order.productPrice = productCFBlack.price;
+		orderDungCFBlack.productPrice = productCFBlack.price;
 		orderDungCFBlack.quantity = 3;
-		orderDungCFBlack.subtotal = orderDungCFBlack.order.productPrice * orderDungCFBlack.quantity;
+		orderDungCFBlack.subtotal = orderDungCFBlack.productPrice * orderDungCFBlack.quantity;
 
 		OrderDetail orderDungCFWhile = new OrderDetail();
 		orderDungCFWhile.order = orderDung;
 		orderDungCFWhile.product = productCFWhile;
-		orderDungCFWhile.order.productPrice = productCFWhile.price;
+		orderDungCFWhile.productPrice = productCFWhile.price;
 		orderDungCFWhile.quantity = 5;
-		orderDungCFWhile.subtotal = orderDungCFWhile.order.productPrice * orderDungCFWhile.quantity;
+		orderDungCFWhile.subtotal = orderDungCFWhile.productPrice * orderDungCFWhile.quantity;
 
 		OrderDetail orderJaydenCFBrown = new OrderDetail();
 		orderJaydenCFBrown.order = orderJayden;
 		orderJaydenCFBrown.product = productCFBrown;
-		orderJaydenCFBrown.order.productPrice = productCFBrown.price;
+		orderJaydenCFBrown.productPrice = productCFBrown.price;
 		orderJaydenCFBrown.quantity = 1;
-		orderJaydenCFBrown.subtotal = orderJaydenCFBrown.order.productPrice * orderJaydenCFBrown.quantity;
+		orderJaydenCFBrown.subtotal = orderJaydenCFBrown.productPrice * orderJaydenCFBrown.quantity;
 
 		OrderDetail orderJaydenCFWhile = new OrderDetail();
 		orderJaydenCFWhile.order = orderJayden;
 		orderJaydenCFWhile.product = productCFWhile;
-		orderJaydenCFWhile.order.productPrice = productCFWhile.price;
+		orderJaydenCFWhile.productPrice = productCFWhile.price;
 		orderJaydenCFWhile.quantity = 2;
-		orderJaydenCFWhile.subtotal = orderJaydenCFWhile.order.productPrice * orderJaydenCFWhile.quantity;
+		orderJaydenCFWhile.subtotal = orderJaydenCFWhile.productPrice * orderJaydenCFWhile.quantity;
 
 		OrderDetail[] orderDetails = { orderDungCFBlack, orderDungCFWhile, orderJaydenCFBrown, orderJaydenCFWhile };
 
@@ -180,12 +180,12 @@ public class MainOOPday3_1 {
 			for (OrderDetail orderDetail : orderDetails) {
 				if (order.id == orderDetail.order.id) {
 					System.out.println(orderDetail.product.name + " - Quantity: " + orderDetail.quantity
-							+ " - Price of product = $" + orderDetail.order.productPrice + " - Sub total = $"
+							+ " - Price of product = $" + orderDetail.productPrice + " - Sub total = $"
 							+ orderDetail.subtotal);
-					order.total += orderDetail.subtotal;
+					order.totalPrice += orderDetail.subtotal;
 				}
 			}
-			System.out.println("Total: $" + order.total);
+			System.out.println("Total: $" + order.totalPrice);
 
 			System.out.println("-----------------------");
 		}
